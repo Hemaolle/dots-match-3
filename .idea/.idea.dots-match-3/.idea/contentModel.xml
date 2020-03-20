@@ -12,11 +12,14 @@
           </e>
           <e p="Runtime" t="Include">
             <e p="CameraUtil.cs" t="Include" />
+            <e p="ColorComponent.cs" t="Include" />
+            <e p="ColorSystem.cs" t="Include" />
             <e p="Components.cs" t="Include" />
             <e p="InputToActionSystem.cs" t="Include" />
             <e p="InputUtil.cs" t="Include" />
             <e p="RotationSystem.cs" t="Include" />
             <e p="Runtime.asmdef" t="Include" />
+            <e p="SetupGameSystem.cs" t="Include" />
           </e>
         </e>
       </e>

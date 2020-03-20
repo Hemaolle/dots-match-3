@@ -1,3 +1,4 @@
+using Tiny2D;
 using Unity.Entities;
 using Unity.Jobs;
 using Unity.Collections;
@@ -48,12 +49,10 @@ namespace Unity.TinyGems
                 {
                     var body = physicsWorld.AllBodies[overlapPointHit.PhysicsBodyIndex];
                     Debug.Log("input hit physicsbody " + body.Entity.Index);
+                    var hexagonState = GetSingleton<ColorComponent>();
+                    hexagonState.Flag = !hexagonState.Flag;
+                    SetSingleton<ColorComponent>(hexagonState);
                 }
-
-//                var activeInput = GetSingleton<ActiveInput>();
-//                activeInput.Value = GetSwapInputFromWorldPos(ref physicsWorld, resultPos, inputDelta);
-                
-//                SetSingleton(activeInput);
 
                 cameraMatrices.Dispose();
             }
