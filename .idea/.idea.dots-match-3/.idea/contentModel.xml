@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\OskariLeppaaho\.Rider2019.1\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\OskariLeppaaho\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_dots-match-3.1649408674.00" t="ExcludeRecursive" />
+    <e p="F:\Testing\dots-match-3" t="IncludeRecursive">
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="Authoring" t="Include">
+            <e p="RotationComponent.cs" t="Include" />
+          </e>
+          <e p="Runtime" t="Include">
+            <e p="Components.cs" t="Include" />
+            <e p="RotationSystem.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Authoring.csproj" t="IncludeRecursive" />
+      <e p="dots-match-3.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Runtime.csproj" t="IncludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
