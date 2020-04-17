@@ -10,10 +10,8 @@ public class ColorSystem : JobComponentSystem
 {
     protected override JobHandle OnUpdate(JobHandle inputDeps)
     {
-        var colorComponent = GetSingleton<ColorComponent>();
-        
         Entities.
-            ForEach((ref SpriteRenderer spriteRenderer) =>
+            ForEach((ref SpriteRenderer spriteRenderer, ref ColorComponent colorComponent) =>
             {
                 Debug.Log("ColorSystem");
                 spriteRenderer.Color = colorComponent.Flag ? Colors.Red : Colors.White;

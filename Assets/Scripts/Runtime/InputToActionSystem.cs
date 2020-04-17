@@ -15,6 +15,8 @@ namespace Unity.TinyGems
         private EntityQuery m_CameraQuery;
         
         private float2 m_StartPosition;
+
+        private EntityManager m_entityManager = Unity.Entities.World.DefaultGameObjectInjectionWorld.EntityManager;
         
         protected override void OnStartRunning()
         {
@@ -49,9 +51,9 @@ namespace Unity.TinyGems
                 {
                     var body = physicsWorld.AllBodies[overlapPointHit.PhysicsBodyIndex];
                     Debug.Log("input hit physicsbody " + body.Entity.Index);
-                    var hexagonState = GetSingleton<ColorComponent>();
-                    hexagonState.Flag = !hexagonState.Flag;
-                    SetSingleton<ColorComponent>(hexagonState);
+                    var colorComponent = m_entityManager.GetComponentData<ColorComponent>(body.Entity);
+                    colorComponent.Flag = !colorComponent.Flag;
+                    m_entityManager.SetComponentData<ColorComponent>(body.Entity, colorComponent);
                 }
 
                 cameraMatrices.Dispose();

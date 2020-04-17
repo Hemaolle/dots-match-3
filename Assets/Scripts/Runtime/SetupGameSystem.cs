@@ -7,7 +7,6 @@ namespace Unity.TinyGems
     {
         protected override void OnStartRunning()
         {
-            EntityManager.CreateEntity(typeof(ColorComponent));
         }
 
         protected override void OnUpdate()
